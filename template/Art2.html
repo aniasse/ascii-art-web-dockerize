@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ascii-Art-Web</title>
+  <link rel="stylesheet" href="/template/style2.css">
+</head>
+<body>
+
+  <div class="logo2">
+        <a href="index.html"><img src="../images/logo.png" class="logo" ></a>
+    </div>
+    <h1>Ascii Art Generator</h1>
+  <div class="hero2"> 
+  <form method="POST" action="/ascii-art">
+    <div class="input-container">
+      <label for="text">Enter Text:</label>
+      <textarea id="text" name="text"></textarea><br><br> 
+    </div>
+
+    <div class="input-container">
+      <label for="banner">Select a Banner:</label>
+      <select name="banner" id="banner">
+        <option value="standard">Standard</option>
+        <option value="shadow">Shadow</option>
+        <option value="thinkertoy">Thinkertoy</option>
+      </select>
+    </div>
+
+    <button type="submit">Generate</button>
+
+  </form>
+</div>
+<br>
+ 
+    <div class="input-container">
+      <textarea cols="30" wrap="off" rows="20" readonly>{{ if .AsciiArt }}{{ .AsciiArt }}{{ end }}</textarea>
+      </div>
+<div class="charge">
+  <button type="submit">
+    <a href="/ascii-art/download" class="link-wrapper">
+      <p class="button-text">Download</p>
+      <img src="../images/download.png" class="tele" alt="Télécharger">
+    </a>
+  </button>
+</div>
+
+  <!-- <script src="/static/script.js"></script> -->
+</body>
+</html>
