@@ -1,5 +1,5 @@
 
-# Ascii-Art-Justify
+# Ascii-Art-Web-Dockerize
 
 This program aims to convert user input into ASCII art.
 
